@@ -7,9 +7,13 @@ import ContactForm from './components/Contact';
 function App() {
     const [categories] = useState([
         {
-            name: 'commercial',
+            name: 'projects',
            
-        }
+        },
+        {
+          name: 'resume',
+         
+      }
         
     ]);
     const [currentCategory, setCurrentCategory] = useState(categories[0]);

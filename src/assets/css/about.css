@@ -1,0 +1,11 @@
+#profile-pic {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 25px;
+}
+
+.w75{
+    color: white;
+}
