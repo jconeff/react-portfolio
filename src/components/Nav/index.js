@@ -1,51 +1,29 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import '../../assets/css/nav.css';
 
 function Nav(props) {
-    const { 
-        categories = [], 
-        setCurrentCategory, 
-        currentCategory,
-        contactSelected,
-        setContactSelected 
-    } = props;
-    
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentCategory.name);}, [currentCategory]);
-
-     return (
-        <header className="flex-row px-1">
-            <h2>
-                <a data-testid="link" href="/">
-                    Jessica Coneff
-                </a>
-            </h2>
+    const navLinks = ['About', 'Portfolio', 'Contact', 'Resume'];
+    return(
+        <header>
             <nav>
-                <ul className="flex-row">
-                    <li className="mx-2">
-                        <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-                            About
-                        </a>
-                    </li>
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <span onClick={() => setContactSelected(true)}>Contact</span>
-                    </li>
-                    {categories.map(category => (
-                        <li className={`mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'}`}
-                            key={category.name}>
-                            <span onClick={() => {
-                                setCurrentCategory(category);
-                                setContactSelected(false);
-                            }}>
-                                {capitalizeFirstLetter(category.name)}
-                            </span>
-                        </li>
-                    ))}
+                <ul className='flex-row'>
+                   
+                 {navLinks.map(tabs => (
+                     <li className='nav-link' key={tabs}>
+                         <a href={'#' + tabs.toLowerCase()}
+                         onClick={() => props.setCurrentPage(tabs)}
+                         className={
+                             props.currentPage === tabs ? 'active-nav' : 'nav-link'
+                         }
+                         >
+                            {tabs}
+                         </a>
+                     </li>
+                 ))}
                 </ul>
             </nav>
         </header>
-    );
-};
+    )
+}
 
 export default Nav;

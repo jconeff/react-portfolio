@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
-function ContactForm() {
+function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
@@ -34,8 +34,11 @@ function ContactForm() {
     };
 
     return (
-        <section>
-            <h1 data-testid="h1tag">Contact me</h1>
+        <section className="flex-row justify-center vw100">
+             <div className="w75 bg-dark px-5 py-5 flex-row">
+                <h2 className="text-center w100 mb-2">Let's Connect!</h2>
+
+                <div class="col-lg-8 mx-auto">
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
@@ -56,8 +59,10 @@ function ContactForm() {
                 )}
                 <button type="submit">Submit</button>
             </form>
+            </div>
+            </div>
         </section>
     );
 };
 
-export default ContactForm;
+export default Contact;

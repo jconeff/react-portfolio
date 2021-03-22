@@ -1,46 +1,39 @@
-import { useState } from 'react';
-import Nav from './components/Nav';
+import React, {useState} from 'react';
 import About from './components/About';
-import Gallery from './components/Gallery';
-import ContactForm from './components/Contact';
+import Nav  from './components/Nav';
+import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+
+
 
 function App() {
-    const [categories] = useState([
-        {
-            name: 'projects',
-           
-        },
-        {
-          name: 'resume',
-         
-      }
-        
-    ]);
-    const [currentCategory, setCurrentCategory] = useState(categories[0]);
-    const [contactSelected, setContactSelected] = useState(false);
+  const [currentPage, setCurrentPage] = useState('About');
 
-    return (
-        <div>
-           <Nav
-  categories={categories}
-  setCurrentCategory={setCurrentCategory}
-  currentCategory={currentCategory}
-  contactSelected={contactSelected}
-  setContactSelected={setContactSelected}
-></Nav>
-           <main>
-           {!contactSelected ? (
-  <>
-  <About></About>
-    <Gallery currentCategory={currentCategory}></Gallery>
-    
-  </>
-) : (
-    <ContactForm></ContactForm>
-  )}
-</main>
-        </div>
-    );
+  const renderPage = () => {
+    switch(currentPage) {
+      case 'Portfolio':
+        return <Portfolio />;
+        case 'Contact':
+        return <Contact />;
+      case 'Resume':
+        return <Resume />;
+      default:
+        return <About />
+    }
+  }
+
+  
+
+  return (
+    <div >
+      <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}></Nav>
+      <main>
+        {renderPage(currentPage)}
+      </main>
+      
+    </div>
+  );
 }
 
 export default App;

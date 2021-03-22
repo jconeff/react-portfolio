@@ -2,6 +2,7 @@ import React from 'react';
 import coneff from '../../assets/images/me.png';
 import '../../assets/css/about.css';
 
+
 function About () {
     return (
         <section className="flex-row justify-center vw100">
@@ -27,35 +28,13 @@ function About () {
                Creative and meticulous from experience with graphic design and illustrating.
               
             </p>
-            <p><button class="btn btn-success"
-                onclick=" window.open('https://docs.google.com/document/d/1rI59grTzIw9zbUmSRsBcu_shXtxsEPuCYqUKzWZMnmk/edit?usp=sharing','_blank')">
-                My Resume</button></p>
+           
+
 
           </div>
-          <div class="row">
-            <ul><h6>Languages:</h6>
-              <li>JavaScript</li>
-              <li>CSS3</li>
-              <li>HTML5</li>
-              <li>SQL</li>
-              <li>NoSQL</li>
-            </ul>
-            <ul><h6>Applications:</h6>
-              <li>GitHub</li>
-              <li>Insomnia</li>
-              <li>MySQL</li>
-              <li>Visual Studio Code</li>
-              <li>Sequelize</li>
-            </ul>
-            <ul><h6>Tools:</h6>
-              <li>Node.js</li>
-              <li>Handlebars</li>
-              <li>jQuery</li>
-              <li>Bootstrap</li>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-            </ul>
-          </div>
+        
+        
+          
         </div>
       </div>
   </section>

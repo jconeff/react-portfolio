@@ -1,3 +1,5 @@
+
+
 #profile-pic {
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,4 +10,17 @@
 
 .w75{
     color: white;
+  
 }
+
+.title{
+    color: aquamarine;
+    style: bold;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+li{
+    font-size: 16px;
+}
+

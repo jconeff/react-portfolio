@@ -1,22 +1,20 @@
 import React from 'react';
 
-function Modal({ onClose, currentPhoto }) {
-    const {name, category, description, index} = currentPhoto;
 
-    return (
-        <div className="modalBackdrop">
-            <div className="modalContainer">
-                <h3 className="modalTitle">{name}</h3>
-                <img src={require(`../../assets/large/${category}/${index}.jpg`).default} alt="current category" />
-                <p>
-                    {description}
-                </p>
-                <button onClick={onClose} type="button">
-                    Close
-                </button>
+function Modal({onClose, currentProject}) {
+    const {name, description, index} = currentProject;
+    return(
+        <div className='modal-backdrop'>
+            <div className='modal-container'>
+                <h3 className='modal-title'>{name}</h3>
+                <img src={require(`../../assets/Projects/${index}.png`).default}
+                alt='current-project'
+                className='modal-project' />
+                <p className='modal-desc'>{description}</p>
+                <button type='button' className='modal-btn' onClick={onClose}>Close Modal</button>
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default Modal;

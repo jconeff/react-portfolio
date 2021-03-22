@@ -1,62 +1,60 @@
-  
-import React from 'react';
-import { useState } from 'react';
+import React, {useState} from 'react';
 import Modal from '../Modal';
 
-function PhotoList({ category }) {
-    const [photos] = useState([
+function ProjectList() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const projects = [
         {
           name: 'Grocery aisle',
-          category: 'projects',
+          url: 'projects',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
         },
         {
           name: 'Grocery booth',
-          category: 'projects',
+          url: 'projects',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
         },
         {
           name: 'Building exterior',
-          category: 'projects',
+          url: 'projects',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
         },
         {
           name: 'Restaurant table',
-          category: 'projects',
+          url: 'projects',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
         },
         {
           name: 'Cafe interior',
-          category: 'projects',
+          url: 'projects',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
         }
-    ]);
+    ];
 
-    const currentPhotos = photos.filter(photo => photo.category === category);
-    const [currentPhoto, setCurrentPhoto] = useState();
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
+    const [currentProject, setCurrentProject] = useState();
     const toggleModal = (image, i) => {
-        setCurrentPhoto({...image, index: i});
+        setCurrentProject({...image, index: i});
         setIsModalOpen(!isModalOpen);
-    };
-
-    return (
-        <div>
-            {isModalOpen && <Modal currentPhoto={currentPhoto} onClose={toggleModal} />}
-            <div className="flex-row">
-                {currentPhotos.map((image, i) => (
+    }
+    return(
+        <div className='container'>
+            {isModalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
+            <div className='project-div'>
+                {projects.map((image, i) => (
+                <div className='test'>
                     <img
-                    src={require(`../../assets/small/${category}/${i}.jpg`).default}
+                        src={require(`../../assets/Projects/${i}.jpg`).default}
                         alt={image.name}
-                        className="img-thumbnail mx-1"
                         onClick={() => toggleModal(image, i)}
+                        className='img-thumbnail project-img'
                         key={image.name}
                     />
+                    <a href={image.url} target='_blank' rel='noreferrer' className='dest-links'>Go To Project</a>
+                </div>
                 ))}
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default PhotoList
+export default ProjectList
