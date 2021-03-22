@@ -36,7 +36,13 @@ function Contact() {
     return (
         <section className="flex-row justify-center vw100">
              <div className="w75 bg-dark px-5 py-5 flex-row">
+             <div className="text-center w100 mb-2">
                 <h2 className="text-center w100 mb-2">Let's Connect!</h2>
+                <p>jessicaconeff@gmail.com</p>
+                <p>Palm Beach Gardens, FL</p>
+                <p>614.738.6045</p>
+                </div>
+                
 
                 <div class="col-lg-8 mx-auto">
             <form id="contact-form" onSubmit={handleSubmit}>

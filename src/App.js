@@ -4,6 +4,7 @@ import Nav  from './components/Nav';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 
 
@@ -31,7 +32,9 @@ function App() {
       <main>
         {renderPage(currentPage)}
       </main>
-      
+       {/* <footer> */}
+       <Footer />
+      {/* </footer> */}
     </div>
   );
 }

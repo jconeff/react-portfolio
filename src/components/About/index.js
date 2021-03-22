@@ -11,11 +11,11 @@ function About () {
                 <div className="w25">
                     <img className="w100 circle px-1 py-1" id="profile-pic" src={coneff} alt="jessica coneff pic" />
                 </div>
-                <div className="w75 pl-2">
-                    <p>
-                    <section id="about">
-    <div class="container">
-      <div class="row">
+               
+                   
+                   
+   
+     
         <div class="col-lg-8 mx-auto">
 
         
@@ -31,15 +31,36 @@ function About () {
            
 
 
+                <div class="row">
+            <ul><h6 class='title'>Languages:</h6>
+              <li>JavaScript</li>
+              <li>CSS3</li>
+              <li>HTML5</li>
+              <li>SQL</li>
+              <li>NoSQL</li>
+            </ul>
+            <ul><h6 class='title'>Applications:</h6>
+              <li>GitHub</li>
+              <li>Insomnia</li>
+              <li>MySQL</li>
+              <li>Visual Studio Code</li>
+              <li>Sequelize</li>
+            </ul>
+            <ul><h6 class='title'>Tools:</h6>
+              <li>Node.js</li>
+              <li>Handlebars</li>
+              <li>jQuery</li>
+              <li>Bootstrap</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+            </ul>
+          </div>
+
           </div>
         
         
-          
-        </div>
-      </div>
-  </section>
-                    </p>
-                </div>
+         
+                
             </div>
         </section>
     );

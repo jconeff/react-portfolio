@@ -1,5 +1,6 @@
 import React from 'react';
 import myDOCX from '../../assets/Resume/coneff.resume2021.docx';
+import '../../assets/css/resume.css';
 
 function Resume() {
     return(

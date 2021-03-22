@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jconeff.github.io/photo-port",
+  "homepage": "https://github.com/jconeff/react-portfolio",
   "dependencies": {
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.1.1",
