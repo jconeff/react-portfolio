@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../assets/css/nav.css';
 
+
 function Nav(props) {
     const navLinks = ['About', 'Portfolio',  'Resume', 'Contact',];
     return(

@@ -20,7 +20,7 @@ function About () {
 
         
 
-            <p class="lead1">
+            <p className="lead1">
               Full stack web developer with a background in digital design as well as health care. 
               Associate of Science in Digital Design and Graphics and Certificate in Full Stack Web 
               Development from the University of Central Florida Coding Boot Camp. 
@@ -31,7 +31,7 @@ function About () {
            
 
 
-                <div class="row">
+                <div className="row">
             <ul><h6 class='title'>Languages:</h6>
               <li>JavaScript</li>
               <li>CSS3</li>

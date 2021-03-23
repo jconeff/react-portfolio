@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 .modal-desc{
     color: white;
     font-size: 14px;
+    margin-bottom: 12px;
+
   
 }
 .modal-title{
     color: white;
 }
+
+.text-center{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
 

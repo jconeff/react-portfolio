@@ -6,51 +6,47 @@ function Resume() {
     return(
         <section className="flex-row justify-center vw100">
             <div className="w75 bg-dark px-5 py-5 flex-row">
-                <h2 className="text-center w100 mb-2">Resume</h2>
+                <h2 className="text-center w100 mb-2">Experience</h2>
 
               <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg- mx-auto">
 
         
 
-            <p class="lead1">
-              Full stack web developer with a background in digital design as well as health care. 
-              Associate of Science in Digital Design and Graphics and Certificate in Full Stack Web 
-              Development from the University of Central Florida Coding Boot Camp. 
-              Great leadership and working well with a team from years of experience in Health Care.
-               Creative and meticulous from experience with graphic design and illustrating.
-              
-            </p>
-           
 
-
-                <div class="row">
-            <ul><h6 class='title'>Languages:</h6>
-              <li>JavaScript</li>
-              <li>CSS3</li>
-              <li>HTML5</li>
-              <li>SQL</li>
-              <li>NoSQL</li>
+               
+            <ul><h6 class='title'>Certified Medical Assistant	</h6>
+            <h6>May 2019- November 2019</h6>
+            <p>Practiced patient safety both clinical and non-clinical in a fast paced office among physicians and other medical staff.</p>
+              <li>●	Received an 98% or higher each month for overall satisfactory score from patient surveys and safety scores. </li>
+              <li>●	Received multiple recognition letters from both patients and medical staff.</li>
+              <li>●	Roomed patients by thoroughly communicating with patients about their medical history while documenting, and taking patients vital signs.</li>
+              <li>●	Worked with a large team of medical staff from different departments.</li>
+              <li>●	Input medical patient information into EMR(electronic medical records) and answered both physician and patient concern through EMR or live calls.</li>
             </ul>
-            <ul><h6 class='title'>Applications:</h6>
-              <li>GitHub</li>
-              <li>Insomnia</li>
-              <li>MySQL</li>
-              <li>Visual Studio Code</li>
-              <li>Sequelize</li>
+            <ul><h6 class='title'>Administrative Medical Assistant	</h6>
+            <h6>March 2018- May2019</h6>
+              <p>Handled all patients for two Ohio Health Physician offices ensuring medication refills
+                 and submitting prior authorizations through patient insurance companies using patient medical history.</p>
+              <li>●	Created an auto fill form shortcut for staff to utilize when documenting patient medical refills to enhance workflow, the form was successful
+                 and became a standard practice when documenting medication refills throughout all of the Ohio Health departments.</li>
+              <li>●	Spoke with patients daily, as well as communicating between physicians, medical assistants and insurance companies.</li>
+              <li>●	Handle two Ohiohealth primary care physician offices, working with nine physicians.</li>
+   
             </ul>
-            <ul><h6 class='title'>Tools:</h6>
-              <li>Node.js</li>
-              <li>Handlebars</li>
-              <li>jQuery</li>
-              <li>Bootstrap</li>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
+            <ul><h6 class='title'>Certified Medical Assistant	</h6>
+            <h6>July 2017- March 2018</h6>
+              <p>Practiced patient safety both clinical and non-clinical in a fast paced gastro office among physicians and other medical staff.</p>
+              <li>●	Overall increased patient satisfaction scores and safety scores 
+                for the entire department, making branch location the highest scores overall for consecutive months. </li>
+              <li>●	Roomed patients by thoroughly communicating with patients about their medical history while documenting, and taking patients vital signs.</li>
+              <li>●	Received an 98% or higher each month for overall satisfactory score from patient surveys. </li>
+      
             </ul>
           </div>
 
-          </div>
+        
         
         
           

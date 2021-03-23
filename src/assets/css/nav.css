@@ -1,10 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
 .nav-link{
     color: aquamarine;
+    font-family: 'Roboto Condensed', sans-serif;
     
 }
 
 .firstname{
     color: white;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .name{
     color: aquamarine;
